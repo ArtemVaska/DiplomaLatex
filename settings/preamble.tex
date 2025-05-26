@@ -1,0 +1,72 @@
+% Макет страницы
+\usepackage[a4paper, left=3.5cm, right=1.5cm, top=2cm, bottom=2cm]{geometry} % подключает пакет geometry для управления размерами страницы
+\usepackage[onehalfspacing]{setspace} % 1.5 интервал
+\usepackage{indentfirst} % добавляет отступ для абзаца после секции
+
+% Настрока заголовков и подзаголовков для оглавления
+\usepackage{titlesec}
+
+% Настройка \section: шрифт 14pt, выравнивание по центру
+\titleformat{\section}
+  {\normalfont\fontsize{14}{16}\selectfont\bfseries\centering} % стиль шрифта заголовка
+  {} % без номера в тексте, но номер будет в ToC
+  {0pt} % расстояние между номером и заголовком
+  {} % код перед названием секции
+% Отступ слева = абзацный отступ, сверху = 2 строки, снизу = 1 строка
+\titlespacing*{\section}
+  {0pt} % левый отступ не нужен
+  {2ex} % отступ сверху
+  {1ex} % отступ снизу
+
+% Настройка \subsection: шрифт 12pt, выравнивание по абзацу
+\titleformat{\subsection}
+  {\normalfont\fontsize{12}{14}\selectfont\bfseries} % стиль шрифта подзаголовка
+  {} % без номера в тексте, но будет номер в ToC
+  {0pt} % расстояние между номером и заголовком
+  {} % код перед названием
+
+\titlespacing*{\subsection}
+  {\parindent} % левый отступ как у абзаца
+  {3ex} % отступ сверху
+  {1ex} % отступ снизу
+
+% Добавляем точки в оглавление
+\usepackage{tocloft}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % добавляем точки
+\renewcommand{\cftdotsep}{1} % плотность точек
+
+% Кодировка и поддержка кириллицы
+\usepackage[utf8]{inputenc} % позволяет использовать текст в кодировке UTF-8
+\usepackage[T2A]{fontenc} % поддержка русских шрифтов (кириллица)
+\usepackage[english, russian]{babel} % включение правил типографики для английского языка (переносы, заголовки и т.д.)
+
+% Кавычки и цитаты
+\usepackage{csquotes} % поддержка корректного форматирования кавычек и цитат (особенно важно при использовании biblatex)
+
+% Вставка изображений
+\usepackage{graphicx} % позволяет вставлять и масштабировать изображения (\includegraphics)
+
+% Указание папки для поиска изображений
+\graphicspath{{images/}}
+
+% Таблицы
+\usepackage{array} % расширенные возможности для работы с таблицами
+\usepackage{tabularx} % автоматический подбор ширины столбцов
+\usepackage{dcolumn} % выравнивание чисел по разделителю
+
+% Математические выражения
+\usepackage{amsmath, amssymb} % расширенные математические окружения; дополнительные математические символы
+
+% Ссылки
+\usepackage{hyperref} % добавляет активные гиперссылки на разделы, рисунки, библиографию и внешние URL
+
+% Подписи
+\usepackage{caption} % более гибкое управление подписями к рисункам и таблицам
+\usepackage{subcaption} % позволяет делать несколько подрисунков с подписями (a), (b), ...
+
+% Библиография
+\usepackage[backend=biber, style=gost-numeric, autolang=other]{biblatex}
+% использование biber для обработки ссылок
+% ГОСТ-стиль нумерованной библиографии
+% язык библиографии подбирается автоматически, нужно поле langid = {russian} или langid = {english} в .bib файле
+\addbibresource{bib/bibliography.bib}
