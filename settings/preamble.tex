@@ -52,7 +52,14 @@
 % Таблицы
 \usepackage{array} % расширенные возможности для работы с таблицами
 \usepackage{tabularx} % автоматический подбор ширины столбцов
-\usepackage{dcolumn} % выравнивание чисел по разделителю
+
+\usepackage{multirow} % настройка для множественных строк
+\renewcommand{\arraystretch}{1.25} % размер между строк таблиц, 1.0 по умолчанию
+
+\usepackage{longtable} % позволяет создавать таблицы, которые переносятся на следующие страницы
+\usepackage{etoolbox} % нужен для двух следующих команд
+\AtBeginEnvironment{table}{\fontsize{10}{10}\selectfont} % для изменения размера шрифта меняем первое значение в {}
+\AtBeginEnvironment{longtable}{\fontsize{10}{10}\selectfont} % для изменения размера шрифта меняем первое значение в {}
 
 % Математические выражения
 \usepackage{amsmath, amssymb} % расширенные математические окружения; дополнительные математические символы
@@ -65,8 +72,9 @@
     citecolor=black % цвет для текста в цитатах
 ]{hyperref} % добавляет активные гиперссылки на разделы, рисунки, библиографию и внешние URL
 
-% Подписи
-\usepackage{caption} % более гибкое управление подписями к рисункам и таблицам
+% Подписи к картинкам и таблицам
+\usepackage[justification=centering]{caption} % более гибкое управление подписями к рисункам и таблицам
+\captionsetup[table]{labelfont=bf, textfont=normalfont} % textfont=bf для жирного шрифта в тексте таблиц
 \usepackage{subcaption} % позволяет делать несколько подрисунков с подписями (a), (b), ...
 
 % Библиография
