@@ -46,6 +46,13 @@
 % Вставка изображений
 \usepackage{graphicx} % позволяет вставлять и масштабировать изображения (\includegraphics)
 
+%\begin{figure}[htbp] % here, top, bottom, page
+%    \centering
+%    \includegraphics[width=0.8\textwidth]{имя_файла.png}
+%    \caption{Подпись к рисунку}
+%    \label{fig:example}
+%\end{figure}
+
 % Указание папки для поиска изображений
 \graphicspath{{images/}}
 
@@ -54,7 +61,7 @@
 \usepackage{tabularx} % автоматический подбор ширины столбцов
 
 \usepackage{multirow} % настройка для множественных строк
-\renewcommand{\arraystretch}{1.25} % размер между строк таблиц, 1.0 по умолчанию
+\renewcommand{\arraystretch}{1.0} % размер между строк таблиц, 1.0 по умолчанию
 
 \usepackage{longtable} % позволяет создавать таблицы, которые переносятся на следующие страницы
 \usepackage{etoolbox} % нужен для двух следующих команд
@@ -75,6 +82,7 @@
 % Подписи к картинкам и таблицам
 \usepackage[justification=centering]{caption} % более гибкое управление подписями к рисункам и таблицам
 \captionsetup[table]{labelfont=bf, textfont=normalfont} % textfont=bf для жирного шрифта в тексте таблиц
+\captionsetup[figure]{labelfont=bf, textfont=normalfont} % textfont=bf для жирного шрифта в тексте картинок
 \usepackage{subcaption} % позволяет делать несколько подрисунков с подписями (a), (b), ...
 
 % Библиография
