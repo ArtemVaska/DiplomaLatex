@@ -1,6 +1,30 @@
 \newpage
 \section{Таблицы с результатами}
 
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+% \usepackage{longtable}
+% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+\begin{longtable}[c]{|c|c|c|c|c|}
+\caption{Результат увеличения выборки для таксономических групп Protostomia и Cnidaria с помощью PSI-BLAST.}
+\label{tab:psi_blast}\\
+\hline
+\textbf{\begin{tabular}[c]{@{}c@{}}Филогенетическая\\ группа\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}c@{}}Таксон\\ высокого\\ ранга\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}c@{}}Видов до\\ PSI-BLAST\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}c@{}}Сколько видов\\ добавил\\ PSI-BLAST\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}c@{}}Итого\\ видов\end{tabular}} \\ \hline
+\endfirsthead
+%
+\endhead
+%
+\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}Bilateria→Protostomia\end{tabular}} & Ecdysozoa & 56 & 42 & 98 \\
+                                                                                  & Spiralia  & 6  & 63 & 69 \\ \hline
+Cnidaria                                                                          & Anthozoa  & 2  & 12 & 14 \\ \hline
+\end{longtable}
+
+
 \begin{longtable}[c]{|c|c|c|c|c|}
 \caption{Сводная таблица с характеристикой кассетного интрона для таксономической группы Actinopterygii.
 Сортировка по возрастанию количества нуклеотидов до стоп-кодона в кассетной интроне.}
