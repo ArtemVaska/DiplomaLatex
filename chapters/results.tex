@@ -1,0 +1,224 @@
+\clearpage
+\section{Результаты}
+
+\subsection{Анализ всех найденных видов}
+
+Были проанализированы 413 нуклеотидных и белковых последовательностей гена \textit{Nxf1} у представителей различных филогенетических групп из клад Cnidaria (Стрекающие) и Bilateria (Двусторонне-симметричные).
+Организмы, относящиеся к Mammalia, в анализ не были взяты в связи с уже имеющимися для них данными.
+
+
+Для таксономических групп более низкого ранга с небольшим количеством видов в них был, с помощью PSI-BLAST были увеличены выборки, где это оказалось возможным, результат продемонстрирован на таблице~\ref{tab:psi_blast}.
+
+\begin{longtable}[c]{|c|c|c|c|c|}
+\caption{Результат увеличения выборки для таксономических групп Protostomia и Cnidaria с помощью PSI-BLAST.}
+\label{tab:psi_blast}\\
+\hline
+\textbf{\begin{tabular}[c]{@{}c@{}}Филогенетическая\\ группа\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}c@{}}Таксон\\ высокого\\ ранга\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}c@{}}Видов до\\ PSI-BLAST\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}c@{}}Сколько видов\\ добавил\\ PSI-BLAST\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}c@{}}Итого\\ видов\end{tabular}} \\ \hline
+\endfirsthead
+%
+\endhead
+%
+\multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}Bilateria→Protostomia\end{tabular}} & Ecdysozoa & 56 & 42 & 98 \\
+                                                                                  & Spiralia  & 6  & 63 & 69 \\ \hline
+Cnidaria                                                                          & Anthozoa  & 2  & 12 & 14 \\ \hline
+\end{longtable}
+
+В итоге для 353 видов удалось найти ``консервативную кассету`` и продолжить дальнейший анализ.
+
+
+На рисунке~\ref{fig:tree_summary} отображено распределение исследованных видов по таксонам высокого ранга.
+
+\begin{figure}[h] % here, top, bottom, page
+    \centering
+    \includegraphics[width=0.9\textwidth]{images/Tree_summary}
+    \caption{Количество видов, взятых в анализ для Protostomia+Cnidaria и Deuterostomia.}
+    \label{fig:tree_summary}
+\end{figure}
+
+Для всех видов, имеющих ``консервативную кассету``, были построены вторичные структуры для интрон-содержащего транскрипта с выделением цветом ``кассетного`` интрона (предоставляется по запросу).
+
+
+\subsection{Подробный анализ Actinopterygii}
+
+Для таксономической группы Actinopterygii проводился более углубленный анализ, так как на текущий момент данных по гену \textit{Nxf1} для них не было.
+Для анализа были взяты все найденные представители данной филогенетической группы - 72 вида.
+
+
+На таблице~\ref{tab:Actinopterygii} показана характеристика ``консервативной кассеты`` для исследуемой группы.
+
+\begin{longtable}[c]{|c|c|c|c|c|}
+\caption{Сводная таблица с характеристикой кассетного интрона для таксономической группы Actinopterygii.
+Сортировка по возрастанию количества нуклеотидов до стоп-кодона в кассетной интроне.}
+\label{tab:Actinopterygii}\\
+\hline
+\textbf{\begin{tabular}[c]{@{}c@{}}Название\\ организма\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}c@{}}Кол-во\\ нуклеотидов\\ до стоп-кодона\\ в интроне\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}c@{}}Длина\\ 1-го экзона\\ в кассете\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}c@{}}Длина\\ кассетного\\ интрона\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}c@{}}Длина\\ 2-го экзона\\ в кассете\end{tabular}} \\ \hline
+\endfirsthead
+%
+\endhead
+%
+\hline
+\endfoot
+%
+\endlastfoot
+%
+\textit{Chanos chanos}                 & 1   & 110 & 3568 & 37 \\
+\textit{Danio rerio}                   & 1   & 110 & 3580 & 37 \\
+\textit{Denticeps clupeoides}          & 7   & 110 & 2629 & 37 \\
+\textit{Labrus bergylta}               & 10  & 110 & 2684 & 37 \\
+\textit{Cottoperca gobio}              & 16  & 110 & 2388 & 37 \\
+\textit{Xiphophorus couchianus}        & 22  & 110 & 2227 & 37 \\
+\textit{Larimichthys crocea}           & 22  & 110 & 2340 & 37 \\
+\textit{Lates calcarifer}              & 22  & 110 & 2434 & 37 \\
+\textit{Notothenia coriiceps}          & 22  & 110 & 2886 & 37 \\
+\textit{Betta splendens}               & 22  & 110 & 2274 & 37 \\
+\textit{Poecilia reticulata}           & 22  & 110 & 2262 & 37 \\
+\textit{Takifugu rubripes}             & 22  & 110 & 2114 & 37 \\
+\textit{Salarias fasciatus}            & 22  & 110 & 3855 & 37 \\
+\textit{Poecilia mexicana}             & 22  & 110 & 2247 & 37 \\
+\textit{Stegastes partitus}            & 22  & 110 & 2900 & 37 \\
+\textit{Clupea harengus}               & 22  & 110 & 3219 & 37 \\
+\textit{Archocentrus centrarchus}      & 22  & 110 & 2644 & 37 \\
+\textit{Esox lucius}                   & 22  & 110 & 2848 & 37 \\
+\textit{Monopterus albus}              & 22  & 110 & 2353 & 37 \\
+\textit{Echeneis naucrates}            & 22  & 110 & 2314 & 37 \\
+\textit{Paralichthys olivaceus}        & 22  & 110 & 3148 & 37 \\
+\textit{Maylandia zebra}               & 22  & 110 & 2565 & 37 \\
+\textit{Parambassis ranga}             & 22  & 110 & 2484 & 37 \\
+\textit{Sander lucioperca}             & 22  & 110 & 2494 & 37 \\
+\textit{Xiphophorus maculatus}         & 22  & 110 & 2231 & 37 \\
+\textit{Nothobranchius furzeri}        & 22  & 110 & 2290 & 37 \\
+\textit{Anabas testudineus}            & 22  & 110 & 2352 & 37 \\
+\textit{Acanthochromis polyacanthus}   & 22  & 110 & 2797 & 37 \\
+\textit{Anarrhichthys ocellatus}       & 22  & 110 & 2355 & 37 \\
+\textit{Boleophthalmus pectinirostris} & 22  & 110 & 1702 & 37 \\
+\textit{Sparus aurata}                 & 22  & 110 & 2361 & 37 \\
+\textit{Oryzias melastigma}            & 22  & 110 & 2212 & 37 \\
+\textit{Seriola dumerili}              & 22  & 110 & 2494 & 37 \\
+\textit{Poecilia formosa}              & 22  & 110 & 2259 & 37 \\
+\textit{Oreochromis niloticus}         & 22  & 110 & 2580 & 37 \\
+\textit{Kryptolebias marmoratus}       & 22  & 110 & 2556 & 37 \\
+\textit{Xiphophorus hellerii}          & 22  & 110 & 2240 & 37 \\
+\textit{Poecilia latipinna}            & 22  & 110 & 2261 & 37 \\
+\textit{Pundamilia nyererei}           & 22  & 110 & 2527 & 37 \\
+\textit{Hippocampus comes}             & 22  & 110 & 2622 & 37 \\
+\textit{Oreochromis aureus}            & 22  & 110 & 2579 & 37 \\
+\textit{Amphiprion ocellaris}          & 22  & 110 & 2752 & 37 \\
+\textit{Seriola lalandi dorsalis}      & 22  & 110 & 2481 & 37 \\
+\textit{Austrofundulus limnaeus}       & 22  & 110 & 2541 & 37 \\
+\textit{Puntigrus tetrazona}           & 25  & 110 & 2440 & 37 \\
+\textit{Fundulus heteroclitus}         & 25  & 110 & 2476 & 37 \\
+\textit{Cyprinodon variegatus}         & 28  & 110 & 2533 & 37 \\
+\textit{Haplochromis burtoni}          & 31  & 110 & 2535 & 37 \\
+\textit{Astatotilapia calliptera}      & 31  & 110 & 2571 & 37 \\
+\textit{Gouania willdenowi}            & 37  & 110 & 2616 & 37 \\
+\textit{Oryzias latipes}               & 40  & 110 & 2331 & 37 \\
+\textit{Sphaeramia orbicularis}        & 43  & 110 & 2376 & 37 \\
+\textit{Pygocentrus nattereri}         & 46  & 110 & 2649 & 37 \\
+\textit{Astyanax mexicanus}            & 46  & 110 & 2791 & 37 \\
+\textit{Colossoma macropomum}          & 46  & 110 & 2644 & 37 \\
+\textit{Ictalurus punctatus}           & 46  & 110 & 3166 & 37 \\
+\textit{Tachysurus fulvidraco}         & 46  & 110 & 3493 & 37 \\
+\textit{Pangasianodon hypophthalmus}   & 46  & 110 & 3348 & 37 \\
+\textit{Erpetoichthys calabaricus}     & 55  & 110 & 3662 & 37 \\
+\textit{Perca flavescens}              & 58  & 110 & 2378 & 37 \\
+\textit{Mastacembelus armatus}         & 64  & 110 & 2371 & 37 \\
+\textit{Salmo salar}                   & 67  & 110 & 3553 & 37 \\
+\textit{Gadus morhua}                  & 67  & 110 & 3151 & 37 \\
+\textit{Etheostoma spectabile}         & 97  & 110 & 2457 & 37 \\
+\textit{Scleropages formosus}          & 112 & 110 & 3412 & 37 \\
+\textit{Myripristis murdjan}           & 112 & 110 & 2492 & 37 \\
+\textit{Paramormyrops kingsleyae}      & 121 & 110 & 2929 & 37 \\
+\textit{Carassius auratus}             & 148 & 110 & 3854 & 37 \\
+\textit{Sinocyclocheilus grahami}      & 148 & 110 & 3330 & 37 \\
+\textit{Sinocyclocheilus rhinocerous}  & 154 & 110 & 3449 & 37 \\
+\textit{Sinocyclocheilus anshuiensis}  & 154 & 110 & 4202 & 37 \\
+\textit{Electrophorus electricus}      & 283 & 110 & 2874 & 37 \\ \hline
+\end{longtable}
+
+
+На рисунках~\ref{fig:Actinopterygii_intron_stop} и~\ref{fig:Actinopterygii_intron} показано распределение длин части ``кассетного`` интрона до стоп-кодона и длин ``кассетного`` интрона, соответственно.
+
+\begin{figure}[h] % here, top, bottom, page
+    \centering
+    \includegraphics[width=1.0\textwidth]{images/Actinopterygii_intron_stop}
+    \caption{Распределение длин части кассетного интрона до стоп-кодона у таксономической группы Actinopterygii}
+    \label{fig:Actinopterygii_intron_stop}
+\end{figure}
+
+\begin{figure}[h] % here, top, bottom, page
+    \centering
+    \includegraphics[width=1.0\textwidth]{images/Actinopterygii_intron}
+    \caption{Распределение длин кассетного интрона у таксономической группы Actinopterygii}
+    \label{fig:Actinopterygii_intron}
+\end{figure}
+
+
+На картинке~\ref{fig:Actinopterygii_maxentscan} представлены результаты оценки ``силы сайтов сплайсинга`` - ``ящики с усами``, отображающие распределение MaxEntScan score для таксонов более низкого ранга внутри группы Actinopterygii.
+Разбиение на подгруппы основано на их удаленности друг от друга.
+Порядок групп на графике не несет смысловой нагрузки.
+
+\begin{figure}[h] % here, top, bottom, page
+    \centering
+    \includegraphics[width=1.0\textwidth]{images/Actinopterygii_maxentscan}
+    \caption{Результаты проведения MaxEntScan для Actinopterygii.}
+    \label{fig:Actinopterygii_maxentscan}
+\end{figure}
+
+
+Рисунок~\ref{fig:Actinopterygii_meme} демонстрирует результаты, полученные с помощью MEME Suite.
+
+Найденные мотивы присутствуют не у всех 72 видов, их количество отображено в столбце Sites.
+Нас заинтересовал 2-й найденный мотив, так как его начало очень похоже на предложенную авторами статьи 2001 года~\cite{cte_consensus} консенсусную последовательность для CTE из рисунка~\ref{fig:CTE_consensus}.
+
+К сожалению, использование Tomtom для поиск найденных консервативных мотивов из ``кассетного`` интроне в базе данных не дало статистически значимых результатов.
+
+Репрезентация вторичной структуры интрон-содержащего транскрипта с выделенным кассетным интроном и найденным мотивом показано на рисунке~\ref{fig:Chanos_chanos_2nd_structure}.
+Вид для демонстрации был выбран случайно.
+
+Учитывая тот факт, что мотив с интересующим нас участком, был найден у 68 видов, именно для них был проведен последующий анализ.
+
+Рисунок~\ref{fig:Actinopterygii_alignment_ruler} отображает результаты множественного выравнивания, а на рисунке~\ref{fig:Actinopterygii_tree} представлено филогенетическое дерево, построенное по результатам этого выравнивания.
+
+\begin{figure}[h] % here, top, bottom, page
+    \centering
+    \includegraphics[width=1.0\textwidth]{images/Actinopterygii_meme_motif}
+    \caption{Результат поиска мотивов внутри кассетного интрона с помощью MEME Suite для таксономической группы Actinopterygii.\\
+    Черным прямоугольником выделен участок, похожий на консенсусную последовательность CTE~\ref{fig:CTE_consensus} из статьи 2001 года.}
+    \label{fig:Actinopterygii_meme}
+\end{figure}
+
+\begin{figure}[h] % here, top, bottom, page
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/CTE_consensus}
+    \caption{Консенсусный CTE из статьи 2001 года}
+    \label{fig:CTE_consensus}
+\end{figure}
+
+\begin{figure}[h] % here, top, bottom, page
+    \centering
+    \includegraphics[width=1.0\textwidth]{images/Chanos_chanos_2nd_structure}
+    \caption{Вторичная структура РНК-транскрипта для \textit{Chanos chanos} из Otomorpha, содержащая кассетный интрон.}
+    \label{fig:Chanos_chanos_2nd_structure}
+\end{figure}
+
+\begin{figure}[h] % here, top, bottom, page
+    \centering
+    \includegraphics[width=1.0\textwidth]{images/Actinopterygii_alignment_ruler}
+    \caption{Результаты множественного выравнивания для Actinopterygii.}
+    \label{fig:Actinopterygii_alignment_ruler}
+\end{figure}
+
+\begin{figure}[h] % here, top, bottom, page
+    \centering
+    \includegraphics[width=1.0\textwidth]{images/Actinopterygii_tree}
+    \caption{Филогенетическое дерево для таксономической группы Actinopterygii}
+    \label{fig:Actinopterygii_tree}
+\end{figure}
