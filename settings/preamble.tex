@@ -106,3 +106,5 @@
 % ГОСТ-стиль нумерованной библиографии
 % язык библиографии подбирается автоматически, нужно поле langid = {russian} или langid = {english} в .bib файле
 \addbibresource{bib/bibliography.bib}
+% заменим ; на запятую между несколькими ссылками
+\renewcommand*{\multicitedelim}{\addcomma\space}
