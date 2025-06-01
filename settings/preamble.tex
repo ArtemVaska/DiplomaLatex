@@ -30,6 +30,18 @@
   {3ex} % отступ сверху
   {1ex} % отступ снизу
 
+% Настройка \subsubsection: шрифт 12pt, выравнивание по абзацу
+\titleformat{\subsubsection}
+  {\normalfont\fontsize{12}{14}\selectfont\bfseries} % стиль шрифта подзаголовка
+  {} % без номера в тексте, но будет номер в ToC
+  {0pt} % расстояние между номером и заголовком
+  {} % код перед названием
+
+\titlespacing*{\subsubsection}
+  {\parindent} % левый отступ как у абзаца
+  {3ex} % отступ сверху
+  {1ex} % отступ снизу
+
 % Настройки внутри списков
 \usepackage{enumitem}
 
